@@ -1,0 +1,18 @@
+// src/pages/portfolio/Portfolio.scss
+.portfolio {
+    text-align: center;
+    padding: 2rem;
+  
+    h1 {
+      margin-bottom: 2rem;
+      color: var(--yellow-theme-main-color);
+    }
+  
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+  

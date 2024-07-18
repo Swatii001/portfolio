@@ -1,0 +1,33 @@
+/* App.scss */
+
+
+.App {
+    height: 100%;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#particles {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     // Ensure particles a/* App.scss */
+
+    
+    
+    
+    
+   
+}
+
+.App__main-page-content {
+    height: calc(100% - 80px) ;
+    z-index: 1;// Ensure main content is above particles
+}
+
+

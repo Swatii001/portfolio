@@ -1,0 +1,84 @@
+.home{
+    
+    
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    
+
+    &__text-wrapper{
+        display: flex;
+        justify-content: center;
+        
+        
+
+        h1{
+           color:var(--yellow-theme-main-color);
+           margin: 6px;
+           margin-bottom: 2px;
+           font-weight: 500;
+           font-size: 7rem;
+           line-height: 8rem;
+           overflow: hidden;
+           white-space: nowrap;
+           animation: typingEffectAnimation 2.5s steps(20,end);
+           
+        }
+        
+    }
+    &__contact-me{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; // Adjust the gap as needed
+    cursor: pointer;
+    color: var(--yellow-theme-main-color);
+    padding: 20px;
+    
+    
+
+    a,
+    svg {
+      color: inherit; // Ensure icons inherit the color from the parent
+      transition: color 0.3s;
+      font-size: 30px;
+    }
+
+    a:hover,
+    svg:hover {
+      color: #45474B; // Optional: change color on hover
+    }
+    }
+    
+}
+@media only screen and (max-width:550px) {
+    .home__text-wrapper h1{
+        font-size: 3rem;
+        line-height: 5rem ;
+    }
+}
+@media only screen and (min-width:551px) and (max-width:768px) {
+    .home__text-wrapper h1{
+        font-size: 4rem;
+        line-height: 6rem ;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:990px) {
+    .home__text-wrapper h1{
+        font-size: 5rem;
+        line-height: 7rem ;
+    }
+}
+
+@keyframes typingEffectAnimation{
+    from{
+        width: 0;
+    }
+    to{
+        width: 30%;
+    }
+}

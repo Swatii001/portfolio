@@ -1,0 +1,104 @@
+/* style.scss */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #2F3645;
+  color: #EEEDEB;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures the section takes up at least the full viewport height */
+  width: 100vw;
+  padding: 4rem; /* Increased padding for more space around the content */
+  box-sizing: border-box;
+  background-color: #2F3645;
+  color: #EEEDEB;
+
+  .content, .lottie-container {
+    flex: 1;
+    padding: 2rem; /* Increased padding inside each section */
+    max-width: 50%;
+    box-sizing: border-box;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 3rem; /* Larger font size for the heading */
+      margin-bottom: 2rem; /* Increased margin bottom for separation */
+      color: #ffffff;
+      text-align: center;
+    }
+  
+    p {
+      font-size: 1.4rem; /* Larger font size for the paragraph */
+      line-height: 1.8; /* Increased line height for better readability */
+      color: #EEEDEB;
+      text-align: center;
+      max-width: 800px; /* Increased maximum width for wider content */
+    }
+
+    .contact-button {
+      margin-top: 2rem; /* Increased margin top for button spacing */
+      padding: 1rem 2rem; /* Increased padding for button size */
+      font-size: 1.2rem; /* Slightly larger font size for the button */
+      color: #2F3645;
+      background-color: #EEEDEB;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+
+      &:hover {
+        background-color: #ffffff;
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(1);
+      }
+    }
+  }
+
+  .lottie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .lottie {
+      width: 100%;
+      max-width: 600px; /* Increased maximum width for larger animation */
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+
+    .content, .lottie-container {
+      max-width: 100%;
+    }
+
+    .lottie-container {
+      margin-bottom: 4rem; /* Increased margin bottom for spacing */
+    }
+  }
+}
+
+a {
+  color: #EEEDEB;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
