@@ -5,6 +5,8 @@ import { faEnvelope,faFile } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-router-dom";
 import {Animate} from 'react-simple-animate';
+import {Document ,page,pdfjs} from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc=`cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 
 
@@ -13,9 +15,9 @@ const Home=()=>{
         <section id="home" className="home">
             <div className="home__text-wrapper">
                 <h1>
-                    Hello,I'm Swati
+                    Hello,I am Swati
                     <br />
-                    I'm a Developer
+                    I am a Developer
                 </h1>
                 <br/>
 
@@ -43,8 +45,9 @@ const Home=()=>{
             <a href="https://github.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} inverse/>
             </a>
-
+            <a href="https://drive.google.com/drive/folders/1xmYjZT2oOrfOzLCwXwObYFgocWN48QJT?usp=sharing" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFile} inverse/>
+            </a>
 
 
             </div>
